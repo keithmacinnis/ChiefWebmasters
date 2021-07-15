@@ -3,7 +3,7 @@
 server with default setting (user 'root' with no password) */
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
-$bucket =  $_ENV['BUCKET'];
+$bucket = $_ENV['BUCKET'];
 $bucket_pw = $_ENV['BUCKET_PW'];
 
 $link = mysqli_connect("localhost", $bucket, $bucket_pw, "chiefweb_emailTickets");

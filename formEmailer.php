@@ -6,7 +6,7 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 // Build POST request to get the reCAPTCHA v3 score from Google
 $recaptcha_url = $_ENV['RECAPTCHA_URL'];
-$recaptcha_secret =  $_ENV['$RECAPTCHA_SECRET'];
+$recaptcha_secret = $_ENV['RECAPTCHA_SECRET'];
 $recaptcha_response = $_POST['recaptcha_response'];
 $to_email = $_ENV['TO_EMAIL'];
 

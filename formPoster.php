@@ -1,8 +1,7 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+
 $bucket = $_ENV['BUCKET'];
 $bucket_pw = $_ENV['BUCKET_PW'];
 

@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Whistler Business Solutions</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">	
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Whistler</strong> <span>Business Solutions</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="websites.html">Websites</a></li>
+							<li><a href="apps.html">Apps</a></li>
+							<li><a href="software.html">Software</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="quote.html" class="button primary fit">Quote</a></li>
+							<li><a href="#" class="button fit">Close</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Quote Tool</h1>
+									</header>
+									<span class="image main"><img src="images/lakelovelyhd.jpg" alt="Lake Lovely, BC in greyscale" /></span>
+									<p>For quotes on mobile apps, websites, and software deign you can either use the form below or send a detailed e-mail to keith@keithmacinnis.com </p>
+									<!-- Form -->
+                                    <form method="post" action="#" id="form">
+                                        <div class="row gtr-uniform">
+                                            <div class="col-6 col-12-xsmall">
+                                                <input type="text" name="name" id="name" value="" placeholder="Name" />
+                                            </div>
+                                            <div class="col-6 col-12-xsmall">
+                                                <input type="email" name="email" id="email" value="" placeholder="Email" />
+                                            </div>
+                                            <!-- Break -->
+                                            <div class="col-12">
+                                                <select name="category" id="category">
+                                                    <option value="">- Service Type -</option>
+                                                    <option value="Website">Website</option>
+                                                    <option value="Software">Software</option>
+                                                    <option value="MobileApps">Mobile Apps</option>
+                                                    <option value="Consultation">Consultation</option>
+                                                </select>
+                                            </div>
+                                
+                                            <!-- Break -->
+                                            <div class="col-4 col-12-small">
+                                                <input type="radio" id="status-designed" value="status-designed"name="status" checked>
+                                                <label for="status-designed">The project is designed</label>
+                                            </div>
+                                            <div class="col-4 col-12-small">
+                                                <input type="radio" id="status-imagined" value="status-imagined" name="status">
+                                                <label for="status-imagined">The project is imagined</label>
+                                            </div>
+                                            <div class="col-4 col-12-small">
+                                                <input type="radio" id="status-stalled" value="status-stalled" name="status">
+                                                <label for="status-stalled">The project is stalled</label>
+                                            </div>
+                                            <!-- Break -->
+                                            <div class="col-6 col-12-small">
+                                                <input type="checkbox" id="copy" name="copy" value="emailMe">
+                                                <label for="copy">Email me a copy</label>
+                                            </div>
+                                            <div class="col-6 col-12-small">
+                                                <input type="checkbox" id="demo-human" name="demo-human" checked>
+                                                <label for="demo-human">I am a human</label>
+                                            </div>
+                                            <!-- Break -->
+                                            <div class="col-12">
+                                                <textarea name="message" id="message" placeholder="Enter your message" rows="12"></textarea>
+                                            </div>
+                                            <!-- Break -->
+                                            <div class="col-12">
+                                                <div id="alert"></div>
+                                                <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                                                <ul class="actions">
+                                                    <li><input type="submit" id="submit-button" value="Send Message" class="primary"/></li>
+                                                    <li><input type="reset" id="clear-button" value="Clear" /></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+								</div>
+							</section>
+					</div>
+
+				
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://www.instagram.com/keithmacinnis/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/keithmacinnis" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/keithmacinnis/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Whistler Business Solutions</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script async src="https://www.google.com/recaptcha/api.js?render=6Lc7etoZAAAAAKO_Qu5imkU3ym1aN6hfmzIN5zWW"></script>
+        <script>
+            $('#form').submit(function(event){
+                event.preventDefault(); // Prevent direct form submission
+                $('#alert').text('Processing...').fadeIn(0); // Display "Processing" to let the user know that the form is being submitted
+                grecaptcha.ready(function(){
+                    grecaptcha.execute('6Lc7etoZAAAAAKO_Qu5imkU3ym1aN6hfmzIN5zWW', { action: 'contact' }).then(function (token) {
+                        var recaptchaResponse = document.getElementById('recaptchaResponse');
+                        recaptchaResponse.value = token;
+                        // Make the Ajax call here
+                        $.ajax({
+                            url: 'formQuoteEmailer.php',
+                            type: 'post',
+                            data: $('#form').serialize(),
+                            dataType: 'json',
+                            success: function( _response ){
+                                // The Ajax request is a success. _response is a JSON object
+                                var error = _response.error;
+                                var success = _response.success;
+                                if(error != "") {
+                                    // In case of error, display it to user
+                                    $('#alert').html(error);
+                                }
+                                else {
+                                    // In case of success, display it to user and remove the submit button
+                                    $('#alert').html(success);
+                                    $('#submit-button').remove();
+                                    $('#clear-button').remove();
+                                }
+                            },
+                            error: function(jqXhr, json, errorThrown){
+                                // In case of Ajax error too, display the result
+                                var error = jqXhr.responseText;
+                                $('#alert').html(error);
+                            }
+                        });
+                    });
+                });
+            });
+        </script>   
+</body>
+</html>
+
+

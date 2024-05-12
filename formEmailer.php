@@ -22,10 +22,10 @@ if ($recaptcha->success == true && $recaptcha->score >= 0.5 && $recaptcha->actio
       $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
       $visitor_email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
       $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
-      $email_from = $visitor_email;
+      $email_from = $to_email;
       $email_subject = "New Form submission";
-      $email_body = "You have received a new message from the user $name via wbs with a score of $recaptcha->score.\n".
-          "Here is the message:\n $message \n".
+      $email_body = "You have received a new message from the user $name via chief webmasters website with a score of $recaptcha->score.\n\n".
+          "Here is the message:\n\n $message \n\n".
       $to = $to_email;
       $headers = "From: $email_from \r\n";
       $headers .= "Reply-To: $visitor_email \r\n";

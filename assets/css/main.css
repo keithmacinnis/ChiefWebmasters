@@ -116,10 +116,9 @@ input, select, textarea {
 /* Pricing Table */
 
 .bodyprice {
-	font-family:'Open Sans';
 	font-style:condensed;
-	background: #2e3557;
-    
+  background-image: url("../../images/alexander-kaunas-kTCZuDtYgzc-unsplash.jpg");
+  background-size:cover;
 }
 
 .bodyprice a{
@@ -4142,3 +4141,9 @@ text-align: center;
 			opacity: 1;
 			visibility: visible;
 		}
+
+    .img-overlay {
+      position: absolute;
+      top: 20%;
+      
+    }

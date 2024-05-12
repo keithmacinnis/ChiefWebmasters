@@ -24,13 +24,13 @@ if ($recaptcha->success == true && $recaptcha->score >= 0.5 && $recaptcha->actio
       $category = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_STRING);
       $status = filter_input(INPUT_POST, 'status', FILTER_VALIDATE_EMAIL);
       $copy = filter_input(INPUT_POST, 'copy', FILTER_SANITIZE_STRING);
-      $email_from = $visitor_email;
+      $email_from = $to_email; 
       $email_subject = "New Form submission";
-      $email_body = "You have received a new message from the user $name via wbs with a score of $recaptcha->score.\n".
-        "You have received a new $category quote request from the user $name via wbs.\n".
-        "The project has a status of: $status \n".
-        "Here is the copy status:\n $copy \n".    
-        "Here is the message:\n $message \n".         
+      $email_body = "You have received a new message from the user $name with a score of $recaptcha->score.\n".
+        "You have received a new $category quote request from the user $name via chief webmasters website.\n".
+        "project status of: $status \n\n".
+        "copy status:\n $copy \n\n".    
+        "message:\n $message \n\n".         
       $to = $to_email;
       $headers = "From: $email_from \r\n";
       $headers .= "Reply-To: $visitor_email \r\n";

@@ -120,6 +120,9 @@ input, select, textarea {
   background-image: url("../../images/alexander-kaunas-kTCZuDtYgzc-unsplash.jpg");
   background-size:cover;
 }
+.tech-services {
+  background-image: url("../../images/marvin-meyer-SYTO3xs06fU-unsplash\ Large.jpeg");
+}
 
 .bodyprice a{
 	font-size: 18px;

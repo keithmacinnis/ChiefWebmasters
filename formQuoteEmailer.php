@@ -19,18 +19,19 @@ if ($recaptcha->success == true && $recaptcha->score >= 0.5 && $recaptcha->actio
     // This is a human, send email
       $name;$visitor_email;$message;$category;$status;$copy;
       $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-      $visitor_email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+      $visitor_email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
       $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
       $category = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_STRING);
-      $status = filter_input(INPUT_POST, 'status', FILTER_VALIDATE_EMAIL);
+      $status = filter_input(INPUT_POST, 'status', FILTER_SANITIZE_STRING);
       $copy = filter_input(INPUT_POST, 'copy', FILTER_SANITIZE_STRING);
       $email_from = $to_email; 
       $email_subject = "New Form submission";
-      $email_body = "You have received a new message from the user $name with a score of $recaptcha->score.\n".
-        "You have received a new $category quote request from the user $name via chief webmasters website.\n".
+      $email_body = "You have received a new quote requestion from $name ($visitor_email) with a score of $recaptcha->score.\n\n".
+        "Chief Webmasters Quote:\n\n".
+        "Service Type: $category \n\n".
         "project status of: $status \n\n".
         "copy status:\n $copy \n\n".    
-        "message:\n $message \n\n".         
+        "message: $message \n\n";     
       $to = $to_email;
       $headers = "From: $email_from \r\n";
       $headers .= "Reply-To: $visitor_email \r\n";

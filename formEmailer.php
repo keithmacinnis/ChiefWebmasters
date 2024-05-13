@@ -20,11 +20,11 @@ if ($recaptcha->success == true && $recaptcha->score >= 0.5 && $recaptcha->actio
     // This is a human, send email
       $name;$email;$comment;
       $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-      $visitor_email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+      $visitor_email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
       $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
       $email_from = $to_email;
       $email_subject = "New Form submission";
-      $email_body = "You have received a new message from the user $name via chief webmasters website with a score of $recaptcha->score.\n\n".
+      $email_body = "You have received a new message from the user $name ($visitor_email) via chief webmasters website with a score of $recaptcha->score.\n\n".
           "Here is the message:\n\n $message \n\n".
       $to = $to_email;
       $headers = "From: $email_from \r\n";

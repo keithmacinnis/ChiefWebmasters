@@ -3829,7 +3829,7 @@ text-align: center;
 		border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 		overflow-x: hidden;
     background-image: url("../../images/artur-luczka-loAfOVk1eNc-unsplash\ Large\ dark.jpeg");
-    background-size: 100vw;
+    background-size: cover;
 	}
 
 		#contact > .inner {

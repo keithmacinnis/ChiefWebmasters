@@ -3551,9 +3551,9 @@ text-align: center;
 
 		@media screen and (max-width: 480px) {
 
-			#header .logo span {
+			/* #header .logo span {
 				display: none;
-			}
+			} */
 
 			#header nav a[href="#menu"] {
 				overflow: hidden;
